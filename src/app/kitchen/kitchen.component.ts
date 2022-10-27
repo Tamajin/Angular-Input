@@ -8,6 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class KitchenComponent implements OnInit {
   constructor() {}
 
+  ingredients = {
+    startCooking: false,
+    numberOfCookies: 0,
+    flour: 0,
+    salt: 0,
+    sugar: 0,
+    egg: 0,
+  };
+
+  isCooked: boolean = false;
+
   startCooking() {
     this.isCooked = true;
   }
