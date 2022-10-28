@@ -1,4 +1,3 @@
-<app-magic-oven [CookiesRecipe]="ingredients"></app-magic-oven>
 <form (submit)="startCooking()">
   <h4></h4>
   <label for="flour">Flour quantity :</label>
@@ -35,3 +34,7 @@
     <button type="submit">Cuisiner 🍪</button>
   </div>
 </form>
+<app-magic-oven
+  [CookiesRecipe]="ingredients"
+  [isCooking]="isCooked"
+></app-magic-oven>
